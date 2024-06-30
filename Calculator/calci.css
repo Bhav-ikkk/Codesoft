@@ -1,0 +1,135 @@
+/* CSS Reset & Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Wrapper Styling */
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(196, 240, 238);
+  transition: background-color 0.8s;
+}
+
+/* Heading Styling */
+h1 {
+  font-weight: 200400;
+  text-align: center;
+  margin-bottom: 1.5%;
+  color: #1e1c1c;
+  font-size: 2.5em;
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Container and Result Styling */
+.container {
+  width: 300px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.result {
+  width: 59.1%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Input Styling */
+input {
+  padding: 15px;
+  color: rgb(87, 87, 87);
+  font-size: 1em;
+  width: 70px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+input[type="button"] {
+  color: rgb(122, 122, 122);
+  cursor: pointer;
+}
+
+input[type="text"] {
+  background-color: rgb(255, 255, 255);
+  width: 218px;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(37, 35, 59);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+input:focus {
+  border-color: rgb(28, 231, 221);
+  box-shadow: 0 0 5px rgba(28, 231, 221, 0.5);
+}
+
+#clear {
+  color: #fff;
+  background-color: rgb(255, 25, 25);
+}
+
+button,
+a {
+  border: none;
+  background-color: rgb(41, 38, 38);
+  padding: 10px;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover,
+a:hover {
+  background-color: rgb(37, 35, 59);
+  transform: translateY(-2px);
+}
+
+/* Bottom Buttons Styling */
+.bottom-buttons {
+  display: flex;
+  margin-left: -2.3px;
+}
+
+.fab {
+  font-size: 1.1em;
+  padding: 0 0.2em;
+}
+
+/* Row Margins */
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+  margin-bottom: 3px;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
